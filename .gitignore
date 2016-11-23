@@ -1,15 +1,18 @@
 # emacs-edited files
 *~
 
+# macOS files
+.DS_Store
+
 # Compiled Object files
 *.slo
 *.lo
 *.o
 
 # Compiled Dynamic libraries
-#*.so
+*.so
 *.dylib
-#!/distrib/python_osx/_mmapi.so
+distrib/python_osx/_mmapi.so
 
 # Compiled Static libraries
 *.lai
@@ -25,7 +28,7 @@
 # build outputs
 build/swigosx
 build/python/*.*
-build/python_osx/*.*
+build/python_osx/*
 build/csharp_vs
 
 # document build
@@ -37,7 +40,6 @@ distrib/**/*.ilk
 distrib/**/*.pdb
 distrib/**/*.exp
 distrib/**/*.exe.config
-
 
 # example projects
 csharp/CommandDemos/bin
@@ -58,3 +60,9 @@ cpp/**/*.suo
 # certain local files
 rms_*.bat
 
+
+distrib/python_osx/_mmapi.so
+
+mm-api.sublime-project
+
+mm-api.sublime-workspace

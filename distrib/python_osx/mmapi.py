@@ -606,6 +606,119 @@ class vectorf(_object):
 vectorf_swigregister = _mmapi.vectorf_swigregister
 vectorf_swigregister(vectorf)
 
+class vectorBrushStamp(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, vectorBrushStamp, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, vectorBrushStamp, name)
+    __repr__ = _swig_repr
+
+    def iterator(self):
+        return _mmapi.vectorBrushStamp_iterator(self)
+    def __iter__(self):
+        return self.iterator()
+
+    def __nonzero__(self):
+        return _mmapi.vectorBrushStamp___nonzero__(self)
+
+    def __bool__(self):
+        return _mmapi.vectorBrushStamp___bool__(self)
+
+    def __len__(self):
+        return _mmapi.vectorBrushStamp___len__(self)
+
+    def pop(self):
+        return _mmapi.vectorBrushStamp_pop(self)
+
+    def __getslice__(self, i, j):
+        return _mmapi.vectorBrushStamp___getslice__(self, i, j)
+
+    def __setslice__(self, *args):
+        return _mmapi.vectorBrushStamp___setslice__(self, *args)
+
+    def __delslice__(self, i, j):
+        return _mmapi.vectorBrushStamp___delslice__(self, i, j)
+
+    def __delitem__(self, *args):
+        return _mmapi.vectorBrushStamp___delitem__(self, *args)
+
+    def __getitem__(self, *args):
+        return _mmapi.vectorBrushStamp___getitem__(self, *args)
+
+    def __setitem__(self, *args):
+        return _mmapi.vectorBrushStamp___setitem__(self, *args)
+
+    def append(self, x):
+        return _mmapi.vectorBrushStamp_append(self, x)
+
+    def empty(self):
+        return _mmapi.vectorBrushStamp_empty(self)
+
+    def size(self):
+        return _mmapi.vectorBrushStamp_size(self)
+
+    def clear(self):
+        return _mmapi.vectorBrushStamp_clear(self)
+
+    def swap(self, v):
+        return _mmapi.vectorBrushStamp_swap(self, v)
+
+    def get_allocator(self):
+        return _mmapi.vectorBrushStamp_get_allocator(self)
+
+    def begin(self):
+        return _mmapi.vectorBrushStamp_begin(self)
+
+    def end(self):
+        return _mmapi.vectorBrushStamp_end(self)
+
+    def rbegin(self):
+        return _mmapi.vectorBrushStamp_rbegin(self)
+
+    def rend(self):
+        return _mmapi.vectorBrushStamp_rend(self)
+
+    def pop_back(self):
+        return _mmapi.vectorBrushStamp_pop_back(self)
+
+    def erase(self, *args):
+        return _mmapi.vectorBrushStamp_erase(self, *args)
+
+    def __init__(self, *args):
+        this = _mmapi.new_vectorBrushStamp(*args)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+
+    def push_back(self, x):
+        return _mmapi.vectorBrushStamp_push_back(self, x)
+
+    def front(self):
+        return _mmapi.vectorBrushStamp_front(self)
+
+    def back(self):
+        return _mmapi.vectorBrushStamp_back(self)
+
+    def assign(self, n, x):
+        return _mmapi.vectorBrushStamp_assign(self, n, x)
+
+    def resize(self, *args):
+        return _mmapi.vectorBrushStamp_resize(self, *args)
+
+    def insert(self, *args):
+        return _mmapi.vectorBrushStamp_insert(self, *args)
+
+    def reserve(self, n):
+        return _mmapi.vectorBrushStamp_reserve(self, n)
+
+    def capacity(self):
+        return _mmapi.vectorBrushStamp_capacity(self)
+    __swig_destroy__ = _mmapi.delete_vectorBrushStamp
+    __del__ = lambda self: None
+vectorBrushStamp_swigregister = _mmapi.vectorBrushStamp_swigregister
+vectorBrushStamp_swigregister(vectorBrushStamp)
+
 class floatArray(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, floatArray, name, value)
@@ -752,16 +865,46 @@ class vec3f(_object):
 vec3f_swigregister = _mmapi.vec3f_swigregister
 vec3f_swigregister(vec3f)
 
+class vec3i(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, vec3i, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, vec3i, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["i"] = _mmapi.vec3i_i_set
+    __swig_getmethods__["i"] = _mmapi.vec3i_i_get
+    if _newclass:
+        i = _swig_property(_mmapi.vec3i_i_get, _mmapi.vec3i_i_set)
+    __swig_setmethods__["j"] = _mmapi.vec3i_j_set
+    __swig_getmethods__["j"] = _mmapi.vec3i_j_get
+    if _newclass:
+        j = _swig_property(_mmapi.vec3i_j_get, _mmapi.vec3i_j_set)
+    __swig_setmethods__["k"] = _mmapi.vec3i_k_set
+    __swig_getmethods__["k"] = _mmapi.vec3i_k_get
+    if _newclass:
+        k = _swig_property(_mmapi.vec3i_k_get, _mmapi.vec3i_k_set)
+
+    def __init__(self):
+        this = _mmapi.new_vec3i()
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_destroy__ = _mmapi.delete_vec3i
+    __del__ = lambda self: None
+vec3i_swigregister = _mmapi.vec3i_swigregister
+vec3i_swigregister(vec3i)
+
 class mat3f(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, mat3f, name, value)
     __swig_getmethods__ = {}
     __getattr__ = lambda self, name: _swig_getattr(self, mat3f, name)
     __repr__ = _swig_repr
-    __swig_setmethods__["data"] = _mmapi.mat3f_data_set
-    __swig_getmethods__["data"] = _mmapi.mat3f_data_get
+    __swig_setmethods__["m"] = _mmapi.mat3f_m_set
+    __swig_getmethods__["m"] = _mmapi.mat3f_m_get
     if _newclass:
-        data = _swig_property(_mmapi.mat3f_data_get, _mmapi.mat3f_data_set)
+        m = _swig_property(_mmapi.mat3f_m_get, _mmapi.mat3f_m_set)
 
     def __init__(self):
         this = _mmapi.new_mat3f()
@@ -1089,6 +1232,9 @@ class StoredCommands(_object):
     def ViewControl_HideObjectBrowser(self):
         return _mmapi.StoredCommands_ViewControl_HideObjectBrowser(self)
 
+    def ViewControl_TakeFocus(self):
+        return _mmapi.StoredCommands_ViewControl_TakeFocus(self)
+
     def AppendBeginToolCommand(self, toolName):
         return _mmapi.StoredCommands_AppendBeginToolCommand(self, toolName)
 
@@ -1107,8 +1253,14 @@ class StoredCommands(_object):
     def AppendToolQuery_NewGroups(self):
         return _mmapi.StoredCommands_AppendToolQuery_NewGroups(self)
 
-    def GetToolQueryResult_NewGroups(self, k, vObjects):
-        return _mmapi.StoredCommands_GetToolQueryResult_NewGroups(self, k, vObjects)
+    def GetToolQueryResult_NewGroups(self, k, vGroups):
+        return _mmapi.StoredCommands_GetToolQueryResult_NewGroups(self, k, vGroups)
+
+    def AppendToolQuery_NewObjects(self):
+        return _mmapi.StoredCommands_AppendToolQuery_NewObjects(self)
+
+    def GetToolQueryResult_NewObjects(self, k, vObjects):
+        return _mmapi.StoredCommands_GetToolQueryResult_NewObjects(self, k, vObjects)
 
     def AppendToolUtilityCommand(self, *args):
         return _mmapi.StoredCommands_AppendToolUtilityCommand(self, *args)
@@ -1131,6 +1283,12 @@ class StoredCommands(_object):
     def GetSceneCommandResult_AppendMeshFile(self, k, vObjects):
         return _mmapi.StoredCommands_GetSceneCommandResult_AppendMeshFile(self, k, vObjects)
 
+    def AppendSceneCommand_AppendPackedMeshFile(self, pFilename):
+        return _mmapi.StoredCommands_AppendSceneCommand_AppendPackedMeshFile(self, pFilename)
+
+    def GetSceneCommandResult_AppendPackedMeshFile(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_AppendPackedMeshFile(self, *args)
+
     def AppendSceneCommand_AppendMeshFileAsReference(self, pFilename):
         return _mmapi.StoredCommands_AppendSceneCommand_AppendMeshFileAsReference(self, pFilename)
 
@@ -1140,11 +1298,14 @@ class StoredCommands(_object):
     def AppendSceneCommand_ExportMeshFile_CurrentSelection(self, pFilename):
         return _mmapi.StoredCommands_AppendSceneCommand_ExportMeshFile_CurrentSelection(self, pFilename)
 
+    def AppendSceneCommand_ExportAsPackedMeshFile(self, pFilename, nObjectID):
+        return _mmapi.StoredCommands_AppendSceneCommand_ExportAsPackedMeshFile(self, pFilename, nObjectID)
+
     def AppendSceneCommand_CreatePivot(self, f):
         return _mmapi.StoredCommands_AppendSceneCommand_CreatePivot(self, f)
 
-    def GetSceneCommandResult_CreatePivot(self, k, nObjectID):
-        return _mmapi.StoredCommands_GetSceneCommandResult_CreatePivot(self, k, nObjectID)
+    def GetSceneCommandResult_CreatePivot(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_CreatePivot(self, *args)
 
     def AppendSceneCommand_LinkPivot(self, nPivotID, nLinkToID):
         return _mmapi.StoredCommands_AppendSceneCommand_LinkPivot(self, nPivotID, nLinkToID)
@@ -1191,11 +1352,47 @@ class StoredCommands(_object):
     def AppendSceneCommand_SetObjectName(self, nObjectID, objectName):
         return _mmapi.StoredCommands_AppendSceneCommand_SetObjectName(self, nObjectID, objectName)
 
+    def AppendSceneCommand_GetObjectUUID(self, nObjectID):
+        return _mmapi.StoredCommands_AppendSceneCommand_GetObjectUUID(self, nObjectID)
+
+    def GetSceneCommandResult_GetObjectUUID(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_GetObjectUUID(self, *args)
+
     def AppendSceneCommand_FindObjectByName(self, objectName):
         return _mmapi.StoredCommands_AppendSceneCommand_FindObjectByName(self, objectName)
 
     def GetSceneCommandResult_FindObjectByName(self, *args):
         return _mmapi.StoredCommands_GetSceneCommandResult_FindObjectByName(self, *args)
+
+    def AppendSceneCommand_FindObjectByUUID(self, objectUUID):
+        return _mmapi.StoredCommands_AppendSceneCommand_FindObjectByUUID(self, objectUUID)
+
+    def GetSceneCommandResult_FindObjectByUUID(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_FindObjectByUUID(self, *args)
+
+    def AppendSceneCommand_GetObjectType(self, nObjectID):
+        return _mmapi.StoredCommands_AppendSceneCommand_GetObjectType(self, nObjectID)
+
+    def GetSceneCommandResult_GetObjectType(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_GetObjectType(self, *args)
+
+    def AppendSceneCommand_GetObjectFrame(self, nObjectID):
+        return _mmapi.StoredCommands_AppendSceneCommand_GetObjectFrame(self, nObjectID)
+
+    def GetSceneCommandResult_GetObjectFrame(self, k, f):
+        return _mmapi.StoredCommands_GetSceneCommandResult_GetObjectFrame(self, k, f)
+
+    def AppendSceneCommand_SetObjectFrame(self, nObjectID, f):
+        return _mmapi.StoredCommands_AppendSceneCommand_SetObjectFrame(self, nObjectID, f)
+
+    def GetSceneCommandResult_SetObjectFrame(self, k):
+        return _mmapi.StoredCommands_GetSceneCommandResult_SetObjectFrame(self, k)
+
+    def AppendSceneCommand_ListFaceGroups(self, nObjectID):
+        return _mmapi.StoredCommands_AppendSceneCommand_ListFaceGroups(self, nObjectID)
+
+    def GetSceneCommandResult_ListFaceGroups(self, k, vGroupIDs):
+        return _mmapi.StoredCommands_GetSceneCommandResult_ListFaceGroups(self, k, vGroupIDs)
 
     def AppendSceneCommand_SetVisible(self, nObjectID):
         return _mmapi.StoredCommands_AppendSceneCommand_SetVisible(self, nObjectID)
@@ -1206,29 +1403,149 @@ class StoredCommands(_object):
     def AppendSceneCommand_ShowAll(self):
         return _mmapi.StoredCommands_AppendSceneCommand_ShowAll(self)
 
+    def AppendSceneCommand_CreateLiveMeshObject(self, pFilename):
+        return _mmapi.StoredCommands_AppendSceneCommand_CreateLiveMeshObject(self, pFilename)
+
+    def GetSceneCommandResult_CreateLiveMeshObject(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_CreateLiveMeshObject(self, *args)
+
+    def AppendSceneCommand_RequestLiveMeshLock(self, pPortName):
+        return _mmapi.StoredCommands_AppendSceneCommand_RequestLiveMeshLock(self, pPortName)
+
+    def AppendSceneCommand_ReleaseLiveMeshLock(self, pPortName):
+        return _mmapi.StoredCommands_AppendSceneCommand_ReleaseLiveMeshLock(self, pPortName)
+
+    def AppendSceneCommand_NotifyLiveMeshUpdate(self, pPortName):
+        return _mmapi.StoredCommands_AppendSceneCommand_NotifyLiveMeshUpdate(self, pPortName)
+
+    def AppendSceneCommand_CreateTrackingLiveMesh(self, pFilename, nObjectID, nUDPNotificationPort):
+        return _mmapi.StoredCommands_AppendSceneCommand_CreateTrackingLiveMesh(self, pFilename, nObjectID, nUDPNotificationPort)
+
+    def GetSceneCommandResult_CreateTrackingLiveMesh(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_CreateTrackingLiveMesh(self, *args)
+
+    def AppendSceneCommand_HaltTrackingLiveMesh(self, pPortName):
+        return _mmapi.StoredCommands_AppendSceneCommand_HaltTrackingLiveMesh(self, pPortName)
+
+    def AppendSceneCommand_SelectPrinter(self, pPrinterName):
+        return _mmapi.StoredCommands_AppendSceneCommand_SelectPrinter(self, pPrinterName)
+
+    def AppendSceneCommand_CreateMesh(self):
+        return _mmapi.StoredCommands_AppendSceneCommand_CreateMesh(self)
+
+    def GetSceneCommandResult_CreateMesh(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_CreateMesh(self, *args)
+
+    def AppendSceneCommand_CompactMesh(self, nObjectID):
+        return _mmapi.StoredCommands_AppendSceneCommand_CompactMesh(self, nObjectID)
+
+    def AppendSceneCommand_UpdateMesh(self, nObjectID):
+        return _mmapi.StoredCommands_AppendSceneCommand_UpdateMesh(self, nObjectID)
+
+    def AppendSceneCommand_GetVertexCount(self, nObjectID):
+        return _mmapi.StoredCommands_AppendSceneCommand_GetVertexCount(self, nObjectID)
+
+    def GetSceneCommandResult_GetVertexCount(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_GetVertexCount(self, *args)
+
+    def AppendSceneCommand_GetTriangleCount(self, nObjectID):
+        return _mmapi.StoredCommands_AppendSceneCommand_GetTriangleCount(self, nObjectID)
+
+    def GetSceneCommandResult_GetTriangleCount(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_GetTriangleCount(self, *args)
+
+    def AppendSceneCommand_GetVertexPosition(self, nObjectID, nVertexID):
+        return _mmapi.StoredCommands_AppendSceneCommand_GetVertexPosition(self, nObjectID, nVertexID)
+
+    def GetSceneCommandResult_GetVertexPosition(self, k, v):
+        return _mmapi.StoredCommands_GetSceneCommandResult_GetVertexPosition(self, k, v)
+
+    def AppendSceneCommand_GetVertexNormal(self, nObjectID, nVertexID):
+        return _mmapi.StoredCommands_AppendSceneCommand_GetVertexNormal(self, nObjectID, nVertexID)
+
+    def GetSceneCommandResult_GetVertexNormal(self, k, v):
+        return _mmapi.StoredCommands_GetSceneCommandResult_GetVertexNormal(self, k, v)
+
+    def AppendSceneCommand_GetVertexColor(self, nObjectID, nVertexID):
+        return _mmapi.StoredCommands_AppendSceneCommand_GetVertexColor(self, nObjectID, nVertexID)
+
+    def GetSceneCommandResult_GetVertexColor(self, k, v):
+        return _mmapi.StoredCommands_GetSceneCommandResult_GetVertexColor(self, k, v)
+
+    def AppendSceneCommand_GetVertexInfo(self, nObjectID, nVertexID):
+        return _mmapi.StoredCommands_AppendSceneCommand_GetVertexInfo(self, nObjectID, nVertexID)
+
+    def GetSceneCommandResult_GetVertexInfo(self, k, v, n, c):
+        return _mmapi.StoredCommands_GetSceneCommandResult_GetVertexInfo(self, k, v, n, c)
+
+    def AppendSceneCommand_GetTriangleIndices(self, nObjectID, nTriangleID):
+        return _mmapi.StoredCommands_AppendSceneCommand_GetTriangleIndices(self, nObjectID, nTriangleID)
+
+    def GetSceneCommandResult_GetTriangleIndices(self, k, t):
+        return _mmapi.StoredCommands_GetSceneCommandResult_GetTriangleIndices(self, k, t)
+
+    def AppendSceneCommand_GetTriangleGroup(self, nObjectID, nTriangleID):
+        return _mmapi.StoredCommands_AppendSceneCommand_GetTriangleGroup(self, nObjectID, nTriangleID)
+
+    def GetSceneCommandResult_GetTriangleGroup(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_GetTriangleGroup(self, *args)
+
+    def AppendSceneCommand_SetVertexPosition(self, nObjectID, nVertexID, v):
+        return _mmapi.StoredCommands_AppendSceneCommand_SetVertexPosition(self, nObjectID, nVertexID, v)
+
+    def AppendSceneCommand_SetVertexNormal(self, nObjectID, nVertexID, v):
+        return _mmapi.StoredCommands_AppendSceneCommand_SetVertexNormal(self, nObjectID, nVertexID, v)
+
+    def AppendSceneCommand_SetVertexColor(self, nObjectID, nVertexID, v):
+        return _mmapi.StoredCommands_AppendSceneCommand_SetVertexColor(self, nObjectID, nVertexID, v)
+
+    def AppendSceneCommand_SetTriangleGroup(self, nObjectID, nTriangleID, nGroupID):
+        return _mmapi.StoredCommands_AppendSceneCommand_SetTriangleGroup(self, nObjectID, nTriangleID, nGroupID)
+
+    def AppendSceneCommand_SetAllVertexColors(self, nObjectID, v):
+        return _mmapi.StoredCommands_AppendSceneCommand_SetAllVertexColors(self, nObjectID, v)
+
+    def AppendSceneCommand_AppendVertex(self, *args):
+        return _mmapi.StoredCommands_AppendSceneCommand_AppendVertex(self, *args)
+
+    def GetSceneCommandResult_AppendVertex(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_AppendVertex(self, *args)
+
+    def AppendSceneCommand_AppendTriangle(self, *args):
+        return _mmapi.StoredCommands_AppendSceneCommand_AppendTriangle(self, *args)
+
+    def GetSceneCommandResult_AppendTriangle(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_AppendTriangle(self, *args)
+
+    def AppendSceneCommand_AllocateNewGroupID(self, nObjectID):
+        return _mmapi.StoredCommands_AppendSceneCommand_AllocateNewGroupID(self, nObjectID)
+
+    def GetSceneCommandResult_AllocateNewGroupID(self, *args):
+        return _mmapi.StoredCommands_GetSceneCommandResult_AllocateNewGroupID(self, *args)
+
     def AppendQueryCommand_ConvertScalarToWorld(self, f):
         return _mmapi.StoredCommands_AppendQueryCommand_ConvertScalarToWorld(self, f)
 
-    def GetQueryResult_ConvertScalarToWorld(self, k, pResult):
-        return _mmapi.StoredCommands_GetQueryResult_ConvertScalarToWorld(self, k, pResult)
+    def GetQueryResult_ConvertScalarToWorld(self, k, fResult):
+        return _mmapi.StoredCommands_GetQueryResult_ConvertScalarToWorld(self, k, fResult)
 
     def AppendQueryCommand_ConvertScalarToScene(self, f):
         return _mmapi.StoredCommands_AppendQueryCommand_ConvertScalarToScene(self, f)
 
-    def GetQueryResult_ConvertScalarToScene(self, k, pResult):
-        return _mmapi.StoredCommands_GetQueryResult_ConvertScalarToScene(self, k, pResult)
+    def GetQueryResult_ConvertScalarToScene(self, k, fResult):
+        return _mmapi.StoredCommands_GetQueryResult_ConvertScalarToScene(self, k, fResult)
 
     def AppendQueryCommand_ConvertPointToWorld(self, fPoint):
         return _mmapi.StoredCommands_AppendQueryCommand_ConvertPointToWorld(self, fPoint)
 
-    def GetQueryResult_ConvertPointToWorld(self, k, pResult):
-        return _mmapi.StoredCommands_GetQueryResult_ConvertPointToWorld(self, k, pResult)
+    def GetQueryResult_ConvertPointToWorld(self, k, fPoint):
+        return _mmapi.StoredCommands_GetQueryResult_ConvertPointToWorld(self, k, fPoint)
 
     def AppendQueryCommand_ConvertPointToScene(self, fPoint):
         return _mmapi.StoredCommands_AppendQueryCommand_ConvertPointToScene(self, fPoint)
 
-    def GetQueryResult_ConvertPointToScene(self, k, pResult):
-        return _mmapi.StoredCommands_GetQueryResult_ConvertPointToScene(self, k, pResult)
+    def GetQueryResult_ConvertPointToScene(self, k, fPoint):
+        return _mmapi.StoredCommands_GetQueryResult_ConvertPointToScene(self, k, fPoint)
 
     def AppendQueryCommand_GetBoundingBox(self):
         return _mmapi.StoredCommands_AppendQueryCommand_GetBoundingBox(self)
@@ -1272,44 +1589,119 @@ class StoredCommands(_object):
     def GetQueryResult_FindNearestPoint(self, k, pFrame):
         return _mmapi.StoredCommands_GetQueryResult_FindNearestPoint(self, k, pFrame)
 
+    def AppendQueryCommand_IsInsideObject(self, p):
+        return _mmapi.StoredCommands_AppendQueryCommand_IsInsideObject(self, p)
+
+    def GetQueryResult_IsInsideObject(self, k):
+        return _mmapi.StoredCommands_GetQueryResult_IsInsideObject(self, k)
+
+    def AppendQueryCommand_SetObjectTypeFilter(self, nFilter):
+        return _mmapi.StoredCommands_AppendQueryCommand_SetObjectTypeFilter(self, nFilter)
+
+    def AppendQueryCommand_ClearObjectTypeFilter(self):
+        return _mmapi.StoredCommands_AppendQueryCommand_ClearObjectTypeFilter(self)
+
+    def AppendQueryCommand_FindObjectsHitByRay(self, o, d):
+        return _mmapi.StoredCommands_AppendQueryCommand_FindObjectsHitByRay(self, o, d)
+
+    def GetQueryResult_FindObjectsHitByRay(self, k, vObjects):
+        return _mmapi.StoredCommands_GetQueryResult_FindObjectsHitByRay(self, k, vObjects)
+
+    def AppendQueryCommand_FindNearestObject(self, p):
+        return _mmapi.StoredCommands_AppendQueryCommand_FindNearestObject(self, p)
+
+    def GetQueryResult_FindNearestObject(self, *args):
+        return _mmapi.StoredCommands_GetQueryResult_FindNearestObject(self, *args)
+
+    def AppendQueryCommand_FindObjectsWithinDistance(self, p, fDistance):
+        return _mmapi.StoredCommands_AppendQueryCommand_FindObjectsWithinDistance(self, p, fDistance)
+
+    def GetQueryResult_FindObjectsWithinDistance(self, k, vObjects):
+        return _mmapi.StoredCommands_GetQueryResult_FindObjectsWithinDistance(self, k, vObjects)
+
+    def AppendQueryCommand_TestIntersection(self, nObjectID, nTestWithObjectID):
+        return _mmapi.StoredCommands_AppendQueryCommand_TestIntersection(self, nObjectID, nTestWithObjectID)
+
+    def GetQueryResult_TestIntersection(self, k):
+        return _mmapi.StoredCommands_GetQueryResult_TestIntersection(self, k)
+
+    def AppendQueryCommand_FindIntersectingObjects(self, nObjectID):
+        return _mmapi.StoredCommands_AppendQueryCommand_FindIntersectingObjects(self, nObjectID)
+
+    def GetQueryResult_FindIntersectingObjects(self, k, vObjects):
+        return _mmapi.StoredCommands_GetQueryResult_FindIntersectingObjects(self, k, vObjects)
+
+    def AppendQueryCommand_ListNumberOfHoles(self):
+        return _mmapi.StoredCommands_AppendQueryCommand_ListNumberOfHoles(self)
+
+    def GetQueryResult_ListNumberOfHoles(self, *args):
+        return _mmapi.StoredCommands_GetQueryResult_ListNumberOfHoles(self, *args)
+
+    def AppendQueryCommand_FindClosestHole(self, p):
+        return _mmapi.StoredCommands_AppendQueryCommand_FindClosestHole(self, p)
+
+    def GetQueryResult_FindClosestHole(self, *args):
+        return _mmapi.StoredCommands_GetQueryResult_FindClosestHole(self, *args)
+
+    def AppendQueryCommand_GetHoleBoundingBox(self, nHoleID):
+        return _mmapi.StoredCommands_AppendQueryCommand_GetHoleBoundingBox(self, nHoleID)
+
+    def GetQueryResult_GetHoleBoundingBox(self, k, fMin, fMax):
+        return _mmapi.StoredCommands_GetQueryResult_GetHoleBoundingBox(self, k, fMin, fMax)
+
     def AppendSelectCommand_All(self):
         return _mmapi.StoredCommands_AppendSelectCommand_All(self)
 
     def AppendSelectUtilityCommand(self, *args):
         return _mmapi.StoredCommands_AppendSelectUtilityCommand(self, *args)
 
-    def AppendSelectCommand_NearestComponent(self, cx, cy, cz):
-        return _mmapi.StoredCommands_AppendSelectCommand_NearestComponent(self, cx, cy, cz)
+    def AppendSelectCommand_NearestComponent(self, *args):
+        return _mmapi.StoredCommands_AppendSelectCommand_NearestComponent(self, *args)
 
-    def AppendSelectCommand_ContainingComponent(self, cx, cy, cz):
-        return _mmapi.StoredCommands_AppendSelectCommand_ContainingComponent(self, cx, cy, cz)
+    def AppendSelectCommand_ContainingComponent(self, *args):
+        return _mmapi.StoredCommands_AppendSelectCommand_ContainingComponent(self, *args)
 
-    def AppendSelectCommand_FirstComponentIntersectingRay(self, ox, oy, oz, dx, dy, dz):
-        return _mmapi.StoredCommands_AppendSelectCommand_FirstComponentIntersectingRay(self, ox, oy, oz, dx, dy, dz)
+    def AppendSelectCommand_FirstComponentIntersectingRay(self, *args):
+        return _mmapi.StoredCommands_AppendSelectCommand_FirstComponentIntersectingRay(self, *args)
 
-    def AppendSelectCommand_AllComponentsIntersectingRay(self, ox, oy, oz, dx, dy, dz):
-        return _mmapi.StoredCommands_AppendSelectCommand_AllComponentsIntersectingRay(self, ox, oy, oz, dx, dy, dz)
+    def AppendSelectCommand_AllComponentsIntersectingRay(self, *args):
+        return _mmapi.StoredCommands_AppendSelectCommand_AllComponentsIntersectingRay(self, *args)
 
-    def AppendSelectCommand_NearestTriangle(self, cx, cy, cz):
-        return _mmapi.StoredCommands_AppendSelectCommand_NearestTriangle(self, cx, cy, cz)
+    def AppendSelectCommand_NearestTriangle(self, *args):
+        return _mmapi.StoredCommands_AppendSelectCommand_NearestTriangle(self, *args)
 
-    def AppendSelectCommand_FirstTriangleIntersectingRay(self, ox, oy, oz, dx, dy, dz):
-        return _mmapi.StoredCommands_AppendSelectCommand_FirstTriangleIntersectingRay(self, ox, oy, oz, dx, dy, dz)
+    def AppendSelectCommand_FirstTriangleIntersectingRay(self, *args):
+        return _mmapi.StoredCommands_AppendSelectCommand_FirstTriangleIntersectingRay(self, *args)
 
-    def AppendSelectCommand_AllTrianglesIntersectingRay(self, ox, oy, oz, dx, dy, dz):
-        return _mmapi.StoredCommands_AppendSelectCommand_AllTrianglesIntersectingRay(self, ox, oy, oz, dx, dy, dz)
+    def AppendSelectCommand_AllTrianglesIntersectingRay(self, *args):
+        return _mmapi.StoredCommands_AppendSelectCommand_AllTrianglesIntersectingRay(self, *args)
 
-    def AppendSelectCommand_InsideSphere(self, cx, cy, cz, r):
-        return _mmapi.StoredCommands_AppendSelectCommand_InsideSphere(self, cx, cy, cz, r)
+    def AppendSelectCommand_InsideSphere(self, *args):
+        return _mmapi.StoredCommands_AppendSelectCommand_InsideSphere(self, *args)
 
     def GetSelectCommandResult_InsideSphere(self, k):
         return _mmapi.StoredCommands_GetSelectCommandResult_InsideSphere(self, k)
 
-    def AppendSelectCommand_ByFaceGroups(self, vGroupIDs):
-        return _mmapi.StoredCommands_AppendSelectCommand_ByFaceGroups(self, vGroupIDs)
+    def AppendSelectCommand_InsideBox(self, *args):
+        return _mmapi.StoredCommands_AppendSelectCommand_InsideBox(self, *args)
+
+    def GetSelectCommandResult_InsideBox(self, k):
+        return _mmapi.StoredCommands_GetSelectCommandResult_InsideBox(self, k)
+
+    def AppendSelectCommand_IntersectingObject(self, nObjectID, nMode):
+        return _mmapi.StoredCommands_AppendSelectCommand_IntersectingObject(self, nObjectID, nMode)
+
+    def AppendSelectCommand_ByFaceGroups(self, *args):
+        return _mmapi.StoredCommands_AppendSelectCommand_ByFaceGroups(self, *args)
 
     def GetSelectCommandResult_ByFaceGroups(self, k):
         return _mmapi.StoredCommands_GetSelectCommandResult_ByFaceGroups(self, k)
+
+    def AppendSelectCommand_HoleBorderRing(self, nHoleID, nMode):
+        return _mmapi.StoredCommands_AppendSelectCommand_HoleBorderRing(self, nHoleID, nMode)
+
+    def GetSelectCommandResult_HoleBorderRing(self, k):
+        return _mmapi.StoredCommands_GetSelectCommandResult_HoleBorderRing(self, k)
 
     def AppendSelectCommand_ListSelectedFaceGroups(self):
         return _mmapi.StoredCommands_AppendSelectCommand_ListSelectedFaceGroups(self)
@@ -1317,11 +1709,35 @@ class StoredCommands(_object):
     def GetSelectCommandResult_ListSelectedFaceGroups(self, k, vGroupIDs):
         return _mmapi.StoredCommands_GetSelectCommandResult_ListSelectedFaceGroups(self, k, vGroupIDs)
 
+    def AppendSelectCommand_ListSelectedTriangles(self):
+        return _mmapi.StoredCommands_AppendSelectCommand_ListSelectedTriangles(self)
+
+    def GetSelectCommandResult_ListSelectedTriangles(self, k, vTriangleIDs):
+        return _mmapi.StoredCommands_GetSelectCommandResult_ListSelectedTriangles(self, k, vTriangleIDs)
+
+    def AppendSelectCommand_ByTriangleID(self, vTriangles, nMode):
+        return _mmapi.StoredCommands_AppendSelectCommand_ByTriangleID(self, vTriangles, nMode)
+
+    def AppendSelectCommand_HasValidSelection(self):
+        return _mmapi.StoredCommands_AppendSelectCommand_HasValidSelection(self)
+
+    def GetSelectCommandResult_HasValidSelection(self, k):
+        return _mmapi.StoredCommands_GetSelectCommandResult_HasValidSelection(self, k)
+
     def AppendActionCommand_BrushStroke3D(self, vPoints):
         return _mmapi.StoredCommands_AppendActionCommand_BrushStroke3D(self, vPoints)
 
-    def AppendActionCommand_DropPartAtPoint(self, pPartPath, f, fRadius, bInteractive=False):
-        return _mmapi.StoredCommands_AppendActionCommand_DropPartAtPoint(self, pPartPath, f, fRadius, bInteractive)
+    def AppendActionCommand_BrushStamp3D(self, v0):
+        return _mmapi.StoredCommands_AppendActionCommand_BrushStamp3D(self, v0)
+
+    def AppendActionCommand_LinearBrushStroke3D(self, v0, v1, nSteps):
+        return _mmapi.StoredCommands_AppendActionCommand_LinearBrushStroke3D(self, v0, v1, nSteps)
+
+    def AppendActionCommand_DropPartAtPoint(self, pPartPath, f, fRadiusWorld, bInteractive=False):
+        return _mmapi.StoredCommands_AppendActionCommand_DropPartAtPoint(self, pPartPath, f, fRadiusWorld, bInteractive)
+
+    def AppendActionCommand_DropSolidPartAtPoint(self, pPartPath, f, fRadiusWorld, bInteractive=False):
+        return _mmapi.StoredCommands_AppendActionCommand_DropSolidPartAtPoint(self, pPartPath, f, fRadiusWorld, bInteractive)
 
     def AppendActionCommand_UpdateDropPart(self, f, fRadius, bMinimizeRotation):
         return _mmapi.StoredCommands_AppendActionCommand_UpdateDropPart(self, f, fRadius, bMinimizeRotation)
@@ -1335,8 +1751,8 @@ class StoredCommands(_object):
     def AppendActionCommand_InsertPolygon(self, x, y, z, fRadius):
         return _mmapi.StoredCommands_AppendActionCommand_InsertPolygon(self, x, y, z, fRadius)
 
-    def GetActionCommandResult_InsertPolygon(self, k, nNewGroupID):
-        return _mmapi.StoredCommands_GetActionCommandResult_InsertPolygon(self, k, nNewGroupID)
+    def GetActionCommandResult_InsertPolygon(self, *args):
+        return _mmapi.StoredCommands_GetActionCommandResult_InsertPolygon(self, *args)
 
     def Store(self, s):
         return _mmapi.StoredCommands_Store(self, s)
@@ -1372,6 +1788,37 @@ class StoredCommands(_object):
     __del__ = lambda self: None
 StoredCommands_swigregister = _mmapi.StoredCommands_swigregister
 StoredCommands_swigregister(StoredCommands)
+
+class floatArray9(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, floatArray9, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, floatArray9, name)
+    __repr__ = _swig_repr
+    __swig_setmethods__["data"] = _mmapi.floatArray9_data_set
+    __swig_getmethods__["data"] = _mmapi.floatArray9_data_get
+    if _newclass:
+        data = _swig_property(_mmapi.floatArray9_data_get, _mmapi.floatArray9_data_set)
+
+    def __len__(self):
+        return _mmapi.floatArray9___len__(self)
+
+    def __getitem__(self, i):
+        return _mmapi.floatArray9___getitem__(self, i)
+
+    def __setitem__(self, i, v):
+        return _mmapi.floatArray9___setitem__(self, i, v)
+
+    def __init__(self):
+        this = _mmapi.new_floatArray9()
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_destroy__ = _mmapi.delete_floatArray9
+    __del__ = lambda self: None
+floatArray9_swigregister = _mmapi.floatArray9_swigregister
+floatArray9_swigregister(floatArray9)
 
 # This file is compatible with both classic and new-style classes.
 
