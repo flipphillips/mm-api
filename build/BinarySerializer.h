@@ -18,7 +18,7 @@
 
 #include <vector>
 #include <string>
-#include <lgConfig.h>
+#include "lgConfig_osx.h"
 
 // [RMS] VS2008 requires different handling for std::vector<bool>
 //#define LG_BUILDING_WITH_VS2008

@@ -66,3 +66,5 @@ distrib/python_osx/_mmapi.so
 mm-api.sublime-project
 
 mm-api.sublime-workspace
+
+*.d
